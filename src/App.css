@@ -1,0 +1,16 @@
+@media (min-width: 1400px) {
+  .app {
+    align-items: center;
+    background-color: #d6d7da;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+  }
+
+  .main-layout {
+    width: 1320px;
+    display: flex;
+    height: 90vh;
+  }
+}

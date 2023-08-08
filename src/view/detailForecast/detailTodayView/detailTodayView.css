@@ -1,0 +1,115 @@
+@media (min-width: 1400px) {
+    .detail-today {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .detail-today-item {
+        width: 29%;
+        /* height: 194px; */
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .detail-today-item-field {
+        background-color: rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        height: 100%;
+        gap: 15px;
+    }
+
+    .item-text {
+        color: rgba(0,0,0,.5);
+        font-size: 1.25rem;
+    }
+
+    .item-infor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-infor-text {
+        color: #6c757d;
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+
+    .item-infor-img-uv {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/uv-icon.jpeg);
+        background-size: 50px 50px;
+    }
+
+    .item-infor-img-wind-speed {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/wind-speed.png);
+        background-size: 50px 50px;
+    }
+
+    .item-infor-img-humidity {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/humidity.jpeg);
+        background-size: 50px 50px;
+    }
+
+    .item-infor-img-visibility {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/visibility.png);
+        background-size: 50px 50px;
+    }
+
+    .item-infor-img-pressure {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/pressure.png);
+        background-size: 50px 50px;
+    }
+
+    .img-sunrise {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/sunrise.png);
+        background-size: 50px 50px;
+    }
+
+    .img-sunset {
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../asset/sunset.png);
+        background-size: 50px 50px;
+    }
+
+    .sunrise-field {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .sunset-field {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .item-infor-sunrise-text {
+        color: #6c757d;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .item-infor-sunset-text {
+        color: #6c757d;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
