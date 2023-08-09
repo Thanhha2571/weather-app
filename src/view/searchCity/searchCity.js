@@ -34,7 +34,8 @@ const SearchCity = () => {
 
     useEffect(() => {
         handleCurrentWeather("Hanoi")
-    },[])
+    }, [])
+
     const temp = Math.round(currentWeather?.main?.temp);
     const isWeatherArray = currentWeather && Array.isArray(currentWeather.weather);
 
@@ -63,6 +64,10 @@ const SearchCity = () => {
                         </div>
                     </div>
                 )}
+            </div>
+            <div className="logo">
+                <span className="city">{currentWeather.name}</span>
+                <img className="img" src="https://us.123rf.com/450wm/macrovector/macrovector1805/macrovector180500152/100615959-weather-forecast-web-page-with-heavy-rain-on-dark-cloudy-day-with-people-under-umbrellas-vector-illu.jpg?ver=6" />
             </div>
         </div>
     );

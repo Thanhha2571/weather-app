@@ -12,6 +12,7 @@ const DetailWeekViewItem = (props) => {
 
     const dispatch = useDispatch()
     const { activeWeekItem } = useSelector((state) => state.weather)
+    // console.log(activeWeekItem)
     return (
         <div className="detail-week-item">
             <div onClick={() => {
