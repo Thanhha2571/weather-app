@@ -357,3 +357,183 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 575px) and (max-width: 768px) {
+    .detail-week {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .detail-week-item {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .detail-week-item-field {
+        background-color: rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .item-week-infor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .item-week-date {
+        color: #6c757d;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .item-week-infor-text {
+        color: #6c757d;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .img-weather-week-forecast-rainy {
+        width: 50px;
+        height: 50px;
+        background-image: url("../../../asset/rainy.png");
+        background-size: 50px 50px;
+    }
+
+    .img-weather-week-forecast-sunny {
+        width: 50px;
+        height: 50px;
+        background-image: url("../../../asset/sunny.png");
+        background-size: 50px 50px;
+    }
+
+    .active-week-item {
+        background-color: aqua;
+    }
+
+    .weather-information {
+        /* width: 100%; */
+        padding: 10px;
+    }
+
+    .weather-information-field {
+        width: 95.6%;
+        background-color: white;
+        /* height: 100px; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .weather-information-item {
+        width: 50%;
+        height: 100%;
+    }
+
+    .item-daily-infor-text {
+        color: #6c757d;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 574px) {
+    .detail-week {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .detail-week-item {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .detail-week-item-field {
+        background-color: rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .item-week-infor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .item-week-date {
+        color: #6c757d;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .item-week-infor-text {
+        color: #6c757d;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .img-weather-week-forecast-rainy {
+        width: 50px;
+        height: 50px;
+        background-image: url("../../../asset/rainy.png");
+        background-size: 50px 50px;
+    }
+
+    .img-weather-week-forecast-sunny {
+        width: 50px;
+        height: 50px;
+        background-image: url("../../../asset/sunny.png");
+        background-size: 50px 50px;
+    }
+
+    .active-week-item {
+        background-color: aqua;
+    }
+
+    .weather-information {
+        /* width: 100%; */
+        padding: 10px;
+    }
+
+    .weather-information-field {
+        width: 95.6%;
+        background-color: white;
+        /* height: 100px; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .weather-information-item {
+        width: 50%;
+        height: 100%;
+    }
+
+    .item-daily-infor-text {
+        color: #6c757d;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}

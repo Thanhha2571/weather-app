@@ -1,8 +1,58 @@
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .detail-forecast {
         width: 75%;
         padding: 24px;
         background-color: rgb(246, 246, 248);
+    }
+
+    .heading {
+        display: flex;
+        gap: 20px;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .today-view-btn {
+        cursor: pointer;
+    }
+
+    .active {
+        font-weight: 700;
+        border-bottom: 3px solid black;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+    .detail-forecast {
+        /* width: 75%; */
+        padding: 24px;
+        background-color: rgb(246, 246, 248);
+        /* overflow-y: scroll; */
+    }
+
+    .heading {
+        display: flex;
+        gap: 20px;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .today-view-btn {
+        cursor: pointer;
+    }
+
+    .active {
+        font-weight: 700;
+        border-bottom: 3px solid black;
+    }
+}
+
+@media (max-width: 574px) {
+    .detail-forecast {
+        /* width: 75%; */
+        padding: 24px;
+        background-color: rgb(246, 246, 248);
+        /* overflow-y: scroll; */
     }
 
     .heading {

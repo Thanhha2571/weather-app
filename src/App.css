@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 768px) {
   .app {
     align-items: center;
     background-color: #d6d7da;
@@ -82,9 +82,31 @@
   }
 
   .main-layout {
-    width: 720px;
+    width: 516px;
     display: flex;
+    flex-direction: column;
     height: 90vh;
     position: absolute;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 574px) {
+  .app {
+    align-items: center;
+    background-color: #d6d7da;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+  }
+
+  .main-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    position: absolute;
+    overflow-y: scroll;
   }
 }
