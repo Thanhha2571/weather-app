@@ -1,0 +1,105 @@
+.left-view {
+    width: 25%;
+    padding: 24px;
+    background-color: #fff;
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .search-box {
+            .search-input {
+                background-color: #fff;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                color: #212529;
+                display: block;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                padding: 0.375rem 0.75rem;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                width: calc(100% - 26px);
+
+                &:focus {
+                    outline: #fff;
+                }
+            }
+        }
+
+        .simple-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .img-weather {
+                width: 153px;
+                height: 117px;
+                // &-rainy {
+                //     width: 153px;
+                //     height: 117px;
+                //     background-image: url("../../asset/rainy.png");
+                //     background-size: 153px 117px;
+                // }
+
+                // &-sunny {
+                //     width: 153px;
+                //     height: 117px;
+                //     background-image: url("../../asset/sunny.png");
+                //     background-size: 145px 117px;
+                // }
+            }
+
+            .location-info {
+                font-size: 2rem;
+                line-height: 1.25;
+                font-weight: 700;
+            }
+
+            .temp-info {
+                font-size: 2rem;
+                line-height: 1.25;
+                font-weight: 700
+            }
+
+            .time-info {
+                font-size: 1.25rem;
+                line-height: 2
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                color: #6c757d;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .logo {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .city {
+            color: white;
+            font-size: 1.75rem;
+            font-weight: 700;
+            position: absolute;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        width: auto
+    }
+}

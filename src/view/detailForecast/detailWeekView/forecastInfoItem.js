@@ -1,4 +1,4 @@
-import "./detailWeekView.css";
+import "./forecastInfoItem.scss";
 import { useSelector } from "react-redux";
 import moment from 'moment';
 import { useEffect } from "react";
@@ -41,13 +41,13 @@ const ForecastInfoItem = () => {
         <div className="weather-information">
             {isWeatherArray && (<span className="item-daily-infor-text">{formattedDate}</span>)}
             {isWeatherArray && (<div className="weather-information-field">
-                <div className="weather-information-item">
+                <div className="weather-information-field-item">
                     <p className="item-daily-infor-text">Temp: {minTemperature}°C ~ {maxTemperature}°C </p>
                     <p className="item-daily-infor-text">Humidity: {dailyWeather.daily[activeWeekItem]?.humidity} % </p>
                     <p className="item-daily-infor-text">Wind speed: {dailyWeather.daily[activeWeekItem]?.wind_speed} m/s</p>
                     <p className="item-daily-infor-text">Pressure: {dailyWeather.daily[activeWeekItem]?.pressure} hPa</p>
                 </div>
-                <div className="weather-information-item">
+                <div className="weather-information-field-item">
                     <p className="item-daily-infor-text">Main weather: {dailyWeather.daily[activeWeekItem]?.weather[0]?.main} </p>
                     <p className="item-daily-infor-text">Description: {dailyWeather.daily[activeWeekItem]?.weather[0]?.description} </p>
                     <p className="item-daily-infor-text">Sunrise: {formattedSunrise} </p>

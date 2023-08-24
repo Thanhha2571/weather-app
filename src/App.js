@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import SearchCity from "./view/searchCity/searchCity";
 import DetailForecast from "./view/detailForecast/detailForecast";
 

@@ -50,6 +50,20 @@ const DetailHourView = () => {
         dataYFeels.push(item.feels_like - 273.15);
     })
 
+    for (let i = 0; i < hourWeather.hourly.length; i++) {
+        //current temperature
+        dataYTemp.push(hourWeather.hourly[i].temp -273.15);
+
+        //current time
+        let time = hourWeather.hourly[i].dt
+        time = moment.unix(time).format('hh:mm A')
+        dataX.push(time)
+        dataX.splice(24)
+
+        //current temperature feels
+        dataYFeels.push(hourWeather.hourly[i].feels_like - 273.15)
+    }
+    // console.log(dataYTemp);
     // console.log(dataX);
     // console.log(dataYTemp);
     const data = {
@@ -82,7 +96,7 @@ const DetailHourView = () => {
         },
     };
     return (
-        <Line data={data} options={options} />
+        <Line style={{marginTop: "12px"}} data={data} options={options} />
     )
 }
 

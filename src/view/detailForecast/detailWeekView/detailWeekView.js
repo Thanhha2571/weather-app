@@ -1,4 +1,5 @@
-import "./detailWeekView.css"
+// import "./detailWeekView.css"
+import "./detailWeekView.scss"
 import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux";
 import { getForecastWeather } from "../../../redux/slices/weatherSlice";

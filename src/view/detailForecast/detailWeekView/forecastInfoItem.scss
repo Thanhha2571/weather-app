@@ -1,0 +1,37 @@
+.weather-information {
+    width: 100%;
+    padding: 10px;
+
+    .item-daily-infor-text {
+        color: #6c757d;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    &-field {
+        width: 95.6%;
+        background-color: white;
+        /* height: 100px; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        &-item {
+            width: 50%;
+            height: 100%;
+
+            .item-daily-infor-text {
+                color: #6c757d;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .weather-information {
+        width: auto;
+        padding: 0;
+    }
+}

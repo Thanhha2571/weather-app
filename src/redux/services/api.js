@@ -10,7 +10,7 @@ const weatherCallApi = {
         });
     },
 
-    getForecastWeather: (lat,lon) => {
+    getForecastWeather: ({lat,lon}) => {
         return httpService.GET({
             uri: "onecall", params: {
                 lat: lat,

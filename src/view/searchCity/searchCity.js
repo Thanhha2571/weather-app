@@ -1,8 +1,12 @@
-import "./searchCity.css";
+// import "./searchCity.css";
+import "./searchCity.scss";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getCurrentWeather } from "../../redux/slices/weatherSlice";
 import { setSearchInput } from "../../redux/slices/weatherSlice";
+import rainyIcon from "../../asset/rainy.png"
+import sunnyIcon from "../../asset/sunny.png"
+
 const SearchCity = () => {
     const [currentTime, setCurrentTime] = useState("");
 
@@ -55,7 +59,11 @@ const SearchCity = () => {
                 </form>
                 {currentWeather && (
                     <div className="simple-detail">
-                        {isWeatherArray && <div className={`img-weather-${currentWeather.weather[0].main === "Rain" ? "rainy" : "sunny"}`}></div>}
+                        {/* {isWeatherArray && <div className={`img-weather-${currentWeather.weather[0].main === "Rain" ? "rainy" : "sunny"}`}></div>} */}
+                        {isWeatherArray && <img
+                            src={currentWeather.weather[0].main === "Rain" ? rainyIcon : sunnyIcon}
+                            className="img-weather"
+                        />}
                         <div className="location-info">{currentWeather.name}</div>
                         <div className="temp-info">{temp} °C</div>
                         <div className="time-info">{currentTime}</div>

@@ -12,6 +12,7 @@ const initialState = {
     searchInput: "",
     loading: false,
     dailyWeather: {},
+    notFoundCity: false,
 }
 
 //get current weather
@@ -19,6 +20,7 @@ export const getCurrentWeather = createAsyncThunk(
     "weather/getCurrentWeather",
     async (input, thunkAPI) => {
         try {
+            await new Promise((resolve) => setTimeout(resolve, 1000));
             const response = await weatherCallApi.getCurrentWeather(input);
             return response
         } catch (err) {
@@ -29,9 +31,9 @@ export const getCurrentWeather = createAsyncThunk(
 
 export const getForecastWeather = createAsyncThunk(
     "weather/getForecastWeather",
-    async ({lat, lon}, thunkAPI) => {
+    async (rq, thunkAPI) => {
         try {
-            const response = await weatherCallApi.getForecastWeather(lat, lon);
+            const response = await weatherCallApi.getForecastWeather(rq);
             return response
         } catch (err) {
             return thunkAPI.rejectWithValue(err);
@@ -73,14 +75,18 @@ export const weatherSlice = createSlice({
             // get current weather
             .addCase(getCurrentWeather.pending, (state, action) => {
                 state.loading = true;
+                state.notFoundCity = false;
+                state.todayView = false;
             })
             .addCase(getCurrentWeather.fulfilled, (state, action) => {
                 state.loading = false;
                 state.currentWeather = action.payload;
                 // console.log(state.currentWeather);
+                state.todayView = true;
             })
             .addCase(getCurrentWeather.rejected, (state, action) => {
                 state.loading = false;
+                state.notFoundCity = true;
             })
             .addCase(getForecastWeather.fulfilled, (state, action) => {
                 state.loading = false;
